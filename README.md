@@ -14,7 +14,7 @@ The code performs the following steps:
 2. **Image Segmentation:** 
     - Extracts the region of interest (ROI) from the input image, focusing on areas likely to contain TB bacilli. This is achieved using color-based segmentation, leveraging the staining characteristics of the bacilli.
 3. **Image Postprocessing:** 
-    - Refines the segmented image by removing small artifacts and noise, improving the accuracy of the detection process. Techniques like morphological operations (e.g., removing small objects, filling holes) might be applied.
+    - Refines the segmented image by removing small artifacts and noise, improving the accuracy of the detection process. Techniques like morphological operations (e.g., removing small objects, filling holes) are applied.
 4. **U-Net Model:**
     - A U-Net model, a convolutional neural network architecture known for its effectiveness in biomedical image segmentation, is employed for pixel-wise classification.
     - The model is trained on a dataset of labeled microscopic images to learn the visual features associated with TB bacilli.
@@ -50,10 +50,9 @@ The code performs the following steps:
 
 - The code is optimized for images with a resolution of 640x640. You might need to adjust it for different image sizes.
 - The training process may take several hours depending on the dataset size, model complexity, and hardware.
-- This project is intended for research and educational purposes. For clinical diagnosis, consult with qualified healthcare professionals.
+- This project is intended for research and educational purposes only. 
 
 ## Acknowledgements
 
-- The U-Net model architecture is based on the original paper by Ronneberger et al.
-- The dataset used for training is publicly available [mention source if applicable].
+- The dataset used for training is publicly available on kaggle.
 - Inspiration and guidance were drawn from existing research on automated TB detection in microscopic images.
